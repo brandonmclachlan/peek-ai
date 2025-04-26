@@ -3,9 +3,9 @@ let activeWebviewId = null;
 const webviews = {
   'openai': document.getElementById('webview-openai'),
   'google': document.getElementById('webview-google'),
-  'poe': document.getElementById('webview-poe'),
-  'copilot': document.getElementById('webview-copilot'),
-  'pi': document.getElementById('webview-pi'),
+  'deepseek': document.getElementById('webview-deepseek'),
+  'grok': document.getElementById('webview-grok'),
+  'junoleads': document.getElementById('webview-junoleads'),
   'perplexity': document.getElementById('webview-perplexity'),
   'claude': document.getElementById('webview-claude'),
   'labs': document.getElementById('webview-labs'),
