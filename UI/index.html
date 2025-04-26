@@ -11,7 +11,7 @@
     <div id="controls">
       <div class="dropdown">
         <button class="dropbtn" id="dropbtn">
-          <img id="selectedImage" src="/Users/prateek.keshari/Downloads/peek/icons/peek-dock-icon.png" alt="Peek" width="20" height="20">
+          <img id="selectedImage" src="UI/peek-dock-icon.png" alt="Peek" width="20" height="20">
           <span id="serviceName">Peek</span>
         </button>
         <div class="dropdown-content" id="dropdownContent">
@@ -21,44 +21,34 @@
           <a href="#" data-value="https://gemini.google.com" data-id="google">
             <img src="gemini.png" alt="Google">
           </a>
-          <a href="#" data-value="https://copilot.microsoft.com" data-id="copilot">
-            <img src="copilot.png" alt="Copilot">
+          <a href="#" data-value="https://chat.deepseek.com" data-id="deepseek">
+            <img src="deepseek.png" alt="Deepseek">
           </a>
-          <a href="#" data-value="https:/poe.com" data-id="poe">
-            <img src="poe.png" alt="Poe">
+          <a href="#" data-value="https://grok.com" data-id="grok">
+            <img src="grok.png" alt="Grok">
           </a>
-          <a href="#" data-value="https://heypi.com/talk" data-id="pi">
-            <img src="pi-logo.jpeg" alt="Pi by Inflection AI">
-          
+          <a href="#" data-value="https://ai.junoleads.io" data-id="junoleads">
+            <img src="junoleads.png" alt="Junoleads AI">
           </a>
           <a href="#" data-value="https://www.perplexity.ai/" data-id="perplexity">
             <img src="perplexity-logo.png" alt="Perplexity">
-        
           </a>
-
           <a href="#" data-value="https://claude.ai/" data-id="claude">
             <img src="claude-logo.png" alt="Claude">
- 
           </a>
-
           <a href="#" data-value="https://labs.perplexity.ai/" data-id="labs">
             <img src="labs.png" alt="labs">
-        
           </a>
           <a href="#" data-value="https://www.threads.net/" data-id="threads">
             <img src="threads.png" alt="threads">
-          
           </a>
-    
 
           <div class="divider"></div>
-            <a href="#" id="settingsDropdown">
-              <span class="settingsWrapper">
-                <i class="fas fa-cog"></i> <!-- Font Awesome Cog Icon -->
-                
-              </span>
-            </a>
-            
+          <a href="#" id="settingsDropdown">
+            <span class="settingsWrapper">
+              <i class="fas fa-cog"></i>
+            </span>
+          </a>
         </div>
       </div>  
       <div id="peekText">
@@ -76,7 +66,7 @@
         <span class="settingsSublabel">Customize Peek settings</span>
     </div>
     <button id="closeButton">
-      <i class="fas fa-times"></i> <!-- Font Awesome Close Icon -->
+      <i class="fas fa-times"></i>
     </button>
     </div>
       <div class="divider"></div>
@@ -126,7 +116,6 @@
           <option value="Alt">Option ⌥</option>
           <option value="Ctrl">Control ⌃</option>
           <option value="Shift">Shift ⇧</option>
-          <!-- Add more options as needed -->
         </select>
         +
         <input type="text" id="key" placeholder="Key">
@@ -164,24 +153,24 @@
           </label>
         </div>
         <div class="checkbox-item">
-          <input type="checkbox" id="Poe" name="Poe" data-id="poe" checked>
-          <label for="Poe">
-            <img src="poe.png" alt="Poe Icon">
-            Poe
+          <input type="checkbox" id="Deepseek" name="Deepseek" data-id="deepseek" checked>
+          <label for="Deepseek">
+            <img src="deepseek.png" alt="Deepseek Icon">
+            Deepseek
           </label>
         </div>
         <div class="checkbox-item">
-          <input type="checkbox" id="Pi" name="Pi" data-id="pi" checked>
-          <label for="Pi">
-            <img src="pi-logo.jpeg" alt="Pi Icon">
-            Pi
+          <input type="checkbox" id="Grok" name="Grok" data-id="grok" checked>
+          <label for="Grok">
+            <img src="grok.png" alt="Grok Icon">
+            Grok
           </label>
         </div>
         <div class="checkbox-item">
-          <input type="checkbox" id="Copilot" name="Copilot" data-id="copilot" checked>
-          <label for="Copilot">
-            <img src="copilot.png" alt="Copilot Icon">
-            Copilot
+          <input type="checkbox" id="Junoleads" name="Junoleads" data-id="junoleads" checked>
+          <label for="Junoleads">
+            <img src="junoleads.png" alt="Junoleads Icon">
+            Junoleads AI
           </label>
         </div>
         <div class="checkbox-item">
@@ -198,7 +187,6 @@
             Claude
           </label>
         </div>
-
         <div class="checkbox-item">
           <input type="checkbox" id="Labs" name="Labs" data-id="labs" checked>
           <label for="Labs">
@@ -206,7 +194,6 @@
             Labs
           </label>
         </div>
-    
       </div>
       <div class="divider">
     </div>
@@ -224,7 +211,6 @@
             Threads
           </label>
         </div>
-           
       </div>
       <div class="divider">
     </div>
@@ -250,14 +236,13 @@
         allowpermissionrequest="true">
       </webview>
       <webview id="webview-google" src="https://gemini.google.com" allowpopups media="true" style="display: none;"></webview>
-      <webview id="webview-poe" src="https://poe.com" allowpopups style="display: none;"></webview>
-      <webview id="webview-pi" src="https://heypi.com/talk" allowpopups style="display: none;"></webview>
-      <webview id="webview-copilot" src="https://copilot.microsoft.com" useragent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36 Edg/114.0.1823.51" allowpopups style="display: none;"></webview>
+      <webview id="webview-deepseek" src="https://chat.deepseek.com" allowpopups style="display: none;"></webview>
+      <webview id="webview-grok" src="https://grok.com" allowpopups style="display: none;"></webview>
+      <webview id="webview-junoleads" src="https://ai.junoleads.io" allowpopups style="display: none;"></webview>
       <webview id="webview-perplexity" src="https://www.perplexity.ai/" allowpopups style="display: none;"></webview>
       <webview id="webview-claude" src="https://claude.ai" allowpopups style="display: none;"></webview>
       <webview id="webview-labs" src="https://labs.perplexity.ai/" allowpopups style="display: none;"></webview>
       <webview id="webview-threads" src="https://www.threads.net/" allowpopups style="display: none;"></webview>
-   
     </div>
       
     <script src="scripts.js"></script>
